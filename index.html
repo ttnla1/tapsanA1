@@ -96,7 +96,8 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full">
-  <div id="app" class="h-full w-full overflow-auto scroll-container" style="background: linear-gradient(135deg, #fdf6f0 0%, #fff1f2 30%, #fce4ec 60%, #fdf6f0 100%);"><!-- Floating decorations -->
+  <div id="app" class="h-full w-full overflow-auto scroll-container" style="background: linear-gradient(135deg, #fdf6f0 0%, #fff1f2 30%, #fce4ec 60%, #fdf6f0 100%);">
+   <!-- Floating decorations -->
    <div class="fixed inset-0 pointer-events-none overflow-hidden" style="z-index:0">
     <div class="flower-deco sparkle" style="top:8%;left:5%;font-size:32px;animation-delay:0s">
      🌸
@@ -123,9 +124,11 @@
    <header class="relative" style="z-index:10">
     <div class="w-full px-4 sm:px-6 lg:px-8 py-3" style="background: linear-gradient(90deg, rgba(252,228,236,0.9), rgba(255,241,242,0.9), rgba(252,228,236,0.9)); border-bottom: 2px solid rgba(248,187,208,0.4);">
      <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3"><a href="https://ttnla1.github.io/trangchuvan/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f8bbd0, #f48fb1); color: #880e4f; border: 1px solid rgba(233,30,99,0.2);"> <i data-lucide="arrow-left" style="width:14px;height:14px"></i> Quay lại trang chính </a>
+      <div class="flex items-center gap-3">
+       <a href="https://ttnla1.github.io/trangchuvan/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f8bbd0, #f48fb1); color: #880e4f; border: 1px solid rgba(233,30,99,0.2);"> <i data-lucide="arrow-left" style="width:14px;height:14px"></i> Quay lại trang chính </a>
       </div>
-      <div class="flex items-center gap-2"><span class="text-lg">🌸</span> <span class="font-display text-sm sm:text-base font-bold" style="color:#880e4f">Tập san Văn học</span>
+      <div class="flex items-center gap-2">
+       <span class="text-lg">🌸</span> <span class="font-display text-sm sm:text-base font-bold" style="color:#880e4f">Tập san Văn học</span>
       </div>
      </div>
     </div><!-- Hero Title -->
@@ -134,21 +137,26 @@
       <p class="text-sm sm:text-base font-medium tracking-widest uppercase float-in stagger-1" style="color:#e91e63">✦ Tập san Văn học ✦</p>
       <h1 id="mainTitle" class="font-display text-2xl sm:text-4xl lg:text-5xl font-bold mt-4 float-in stagger-2" style="color:#880e4f; line-height:1.3">Dọc miền văn học<br>
         lắng nghe thanh âm phương Nam</h1>
-      <div class="flex items-center justify-center gap-3 mt-5 float-in stagger-3"><span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,#e91e63);" class="inline-block"></span> <span style="color:#e91e63">❀</span> <span style="width:40px;height:1px;background:linear-gradient(90deg,#e91e63,transparent);" class="inline-block"></span>
+      <div class="flex items-center justify-center gap-3 mt-5 float-in stagger-3">
+       <span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,#e91e63);" class="inline-block"></span> <span style="color:#e91e63">❀</span> <span style="width:40px;height:1px;background:linear-gradient(90deg,#e91e63,transparent);" class="inline-block"></span>
       </div>
       <p class="mt-4 text-sm sm:text-base max-w-xl mx-auto float-in stagger-4" style="color:#8d6e63">Hành trình khám phá vẻ đẹp văn chương qua từng trang viết</p>
      </div>
     </div><!-- Navigation -->
     <nav class="w-full glass-card sticky top-0" style="z-index:20; border-top: 1px solid rgba(248,187,208,0.3);">
-     <div class="max-w-4xl mx-auto px-4 flex items-center justify-center gap-1 sm:gap-2 py-2 flex-wrap"><button onclick="showPage('home')" class="nav-link active px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="home"> <span class="flex items-center gap-1.5"><i data-lucide="home" style="width:14px;height:14px"></i> Trang chủ</span> </button> <button onclick="showPage('members')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="members"> <span class="flex items-center gap-1.5"><i data-lucide="users" style="width:14px;height:14px"></i> Thành viên</span> </button> <button onclick="showPage('tapsan-vi')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="tapsan-vi"> <span class="flex items-center gap-1.5"><i data-lucide="book-open" style="width:14px;height:14px"></i> Tập san (Tiếng Việt)</span> </button> <button onclick="showPage('tapsan-en')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="tapsan-en"> <span class="flex items-center gap-1.5"><i data-lucide="globe" style="width:14px;height:14px"></i> Tập san (Tiếng Anh)</span> </button> <button onclick="showPage('gallery')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="gallery"> <span class="flex items-center gap-1.5"><i data-lucide="image" style="width:14px;height:14px"></i> Hình ảnh</span> </button>
+     <div class="max-w-4xl mx-auto px-4 flex items-center justify-center gap-1 sm:gap-2 py-2 flex-wrap">
+      <button onclick="showPage('home')" class="nav-link active px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="home"> <span class="flex items-center gap-1.5"><i data-lucide="home" style="width:14px;height:14px"></i> Trang chủ</span> </button> <button onclick="showPage('members')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="members"> <span class="flex items-center gap-1.5"><i data-lucide="users" style="width:14px;height:14px"></i> Thành viên</span> </button> <button onclick="showPage('tapsan-vi')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="tapsan-vi"> <span class="flex items-center gap-1.5"><i data-lucide="book-open" style="width:14px;height:14px"></i> Tập san (Tiếng Việt)</span> </button> <button onclick="showPage('tapsan-en')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="tapsan-en"> <span class="flex items-center gap-1.5"><i data-lucide="globe" style="width:14px;height:14px"></i> Tập san (Tiếng Anh)</span> </button> <button onclick="showPage('gallery')" class="nav-link px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm" style="color:#880e4f" data-page="gallery"> <span class="flex items-center gap-1.5"><i data-lucide="image" style="width:14px;height:14px"></i> Hình ảnh</span> </button>
      </div>
     </nav>
    </header><!-- Pages Container -->
-   <main class="relative w-full max-w-5xl mx-auto px-4 sm:px-6 py-8" style="z-index:5; min-height: 60%;"><!-- HOME PAGE -->
+   <main class="relative w-full max-w-5xl mx-auto px-4 sm:px-6 py-8" style="z-index:5; min-height: 60%;">
+    <!-- HOME PAGE -->
     <section id="page-home" class="page-transition page-visible">
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><!-- Welcome Card -->
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Welcome Card -->
       <div class="glass-card rounded-2xl p-6 sm:p-8 card-hover float-in stagger-1" style="border:1px solid rgba(248,187,208,0.4)">
-       <div class="flex items-center gap-2 mb-4"><span class="text-2xl">📖</span>
+       <div class="flex items-center gap-2 mb-4">
+        <span class="text-2xl">📖</span>
         <h2 class="font-display text-xl sm:text-2xl font-bold" style="color:#880e4f">Giới thiệu</h2>
        </div>
        <p class="leading-relaxed text-sm sm:text-base" style="color:#5d4037">Chào mừng bạn đến với tập san <strong style="color:#e91e63">"Dọc miền văn học, lắng nghe thanh âm phương Nam"</strong> — nơi chúng tôi cùng nhau khám phá những giá trị văn học đặc sắc của vùng đất phương Nam qua từng trang viết, từng câu chuyện và từng thanh âm đậm đà bản sắc.</p>
@@ -157,7 +165,8 @@
        </div>
       </div><!-- Mission Card -->
       <div class="glass-card rounded-2xl p-6 sm:p-8 card-hover float-in stagger-2" style="border:1px solid rgba(248,187,208,0.4)">
-       <div class="flex items-center gap-2 mb-4"><span class="text-2xl">🌿</span>
+       <div class="flex items-center gap-2 mb-4">
+        <span class="text-2xl">🌿</span>
         <h2 class="font-display text-xl sm:text-2xl font-bold" style="color:#880e4f">Sứ mệnh</h2>
        </div>
        <ul class="space-y-3 text-sm sm:text-base" style="color:#5d4037">
@@ -168,7 +177,8 @@
        </ul>
       </div><!-- Features -->
       <div class="md:col-span-2 glass-card rounded-2xl p-6 sm:p-8 card-hover float-in stagger-3" style="border:1px solid rgba(248,187,208,0.4)">
-       <div class="flex items-center gap-2 mb-5"><span class="text-2xl">✨</span>
+       <div class="flex items-center gap-2 mb-5">
+        <span class="text-2xl">✨</span>
         <h2 class="font-display text-xl sm:text-2xl font-bold" style="color:#880e4f">Nội dung nổi bật</h2>
        </div>
        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -266,11 +276,11 @@
       <h2 class="font-display text-2xl sm:text-3xl font-bold" style="color:#880e4f">📖 Tập san — Tiếng Việt</h2>
       <p class="mt-2 text-sm" style="color:#8d6e63">Những bài viết bằng tiếng Việt về văn học phương Nam</p>
      </div>
-     <div class="space-y-5"><!-- Article 1 --> <!-- TABLE OF CONTENTS -->
+     <div class="space-y-5">
+      <!-- Article 1 --> <!-- TABLE OF CONTENTS -->
       <div class="glass-card rounded-2xl p-6 sm:p-8 mb-8" style="border:1px solid rgba(248,187,208,0.4); background:linear-gradient(135deg,rgba(248,187,208,0.1),rgba(255,241,242,0.1))">
        <h3 class="font-display text-lg font-bold mb-5" style="color:#880e4f">📑 Mục lục bài viết</h3>
-       <div class="space-y-2">
-        <button onclick="document.getElementById('section-1').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">I. Giới thiệu tác giả</span> </button> <button onclick="document.getElementById('section-2').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">II. Tiểu sử Trần Bảo Định</span> </button> <button onclick="document.getElementById('section-3').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">III. Các giá trị văn hóa trong tác phẩm</span> </button>
+       <div class="space-y-2"><button onclick="document.getElementById('section-1').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">I. Giới thiệu tác giả</span> </button> <button onclick="document.getElementById('section-2').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">II. Tiểu sử Trần Bảo Định</span> </button> <button onclick="document.getElementById('section-3').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">III. Các giá trị văn hóa trong tác phẩm</span> </button>
        </div>
       </div><!-- SECTION 1: AUTHOR INTRO -->
       <div id="section-1" class="mb-10">
@@ -371,8 +381,7 @@
         <h3 class="font-display text-lg font-bold mb-4 pb-2" style="color:#e91e63">2️⃣ Trữ tình dân gian, ca dao, dân ca</h3>
         <div class="glass-card rounded-2xl p-6" style="border:1px solid rgba(248,187,208,0.3)">
          <p class="mb-4 text-sm leading-relaxed" style="color:#5d4037">Yếu tố trữ tình dân gian, ca dao được sử dụng hầu hết trong các truyện ngắn, tái hiện sinh động về <strong>tinh thần đời sống phong phú</strong> và <strong>gia đình truyền thống</strong>.</p>
-         <div class="space-y-4">
-          <!-- Ví dụ 1 -->
+         <div class="space-y-4"><!-- Ví dụ 1 -->
           <div class="p-4 rounded-lg" style="background:linear-gradient(135deg,#fff1f2,#fce4ec)">
            <p class="font-semibold text-sm mb-2" style="color:#880e4f">🎵 Gia đình hăng say làm việc</p>
            <p class="italic text-xs px-3 py-2 rounded mb-2" style="background:white; color:#ad1457">"Cha chài, mẹ lưới, con câu / Chàng rễ đóng đáy, con dâu ngòi nò"</p>
@@ -404,8 +413,7 @@
         <h3 class="font-display text-lg font-bold mb-4 pb-2" style="color:#e91e63">3️⃣ Tri thức dân gian</h3>
         <div class="glass-card rounded-2xl p-6" style="border:1px solid rgba(248,187,208,0.3)">
          <p class="mb-4 leading-relaxed text-sm" style="color:#5d4037">Tri thức dân gian chứa đựng <strong>giá trị văn hóa, đạo đức và lối sống</strong> của cộng đồng, phản ánh cách tương tác với thiên nhiên.</p>
-         <div class="space-y-4">
-          <!-- Kinh nghiệm nông nghiệp -->
+         <div class="space-y-4"><!-- Kinh nghiệm nông nghiệp -->
           <div class="p-4 rounded-lg" style="background:#fff8f9; border-left:4px solid #f8bbd0">
            <p class="font-semibold text-sm mb-2" style="color:#880e4f">🌾 Kinh nghiệm nông nghiệp</p>
            <p class="italic text-xs px-3 py-2 rounded mb-2" style="background:white; color:#880e4f">"Con cá cái đẻ rất hiểu ý trời, lúc nào mưa nắng..."</p>
@@ -421,8 +429,7 @@
        </div><!-- 4. TRI THỨC VỀ LỊCH SỬ -->
        <div id="section-3" class="mt-10">
         <h3 class="font-display text-lg font-bold mb-4 pb-2" style="color:#e91e63">4️⃣ Tri thức về lịch sử vùng Nam Bộ</h3>
-        <div class="space-y-5">
-         <!-- Chùa Tiên Châu -->
+        <div class="space-y-5"><!-- Chùa Tiên Châu -->
          <div class="glass-card rounded-2xl p-6" style="border:1px solid rgba(248,187,208,0.3)">
           <h4 class="font-semibold text-base mb-3" style="color:#880e4f">🏛️ Chùa Tiên Châu — Di tích lịch sử cấp quốc gia</h4>
           <p class="italic px-4 py-3 rounded text-sm mb-3" style="background:linear-gradient(135deg,#fff1f2,#fce4ec); color:#ad1457">"Phía trên xóm chài, gặp bãi nước trong, đục phân minh... Tiên nữ xuất hiện tắm gội, vui đùa và người đời gọi đó là <strong>Tiên Châu</strong>"</p>
@@ -450,8 +457,7 @@
         </div>
        </div>
       </div><!-- SEPARATOR -->
-      <div class="my-8 flex items-center justify-center gap-3">
-       <span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,#e91e63);" class="inline-block"></span> <span style="color:#e91e63">❀</span> <span style="width:40px;height:1px;background:linear-gradient(90deg,#e91e63,transparent);" class="inline-block"></span>
+      <div class="my-8 flex items-center justify-center gap-3"><span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,#e91e63);" class="inline-block"></span> <span style="color:#e91e63">❀</span> <span style="width:40px;height:1px;background:linear-gradient(90deg,#e91e63,transparent);" class="inline-block"></span>
       </div>
      </div>
     </section><!-- TAPSAN ENGLISH PAGE -->
@@ -460,11 +466,11 @@
       <h2 class="font-display text-2xl sm:text-3xl font-bold" style="color:#880e4f">📖 Journal — English Edition</h2>
       <p class="mt-2 text-sm" style="color:#8d6e63">Exploring the Cultural Richness of Southern Vietnamese Literature</p>
      </div>
-     <div class="space-y-5"><!-- TABLE OF CONTENTS -->
+     <div class="space-y-5">
+      <!-- TABLE OF CONTENTS -->
       <div class="glass-card rounded-2xl p-6 sm:p-8 mb-8" style="border:1px solid rgba(248,187,208,0.4); background:linear-gradient(135deg,rgba(248,187,208,0.1),rgba(255,241,242,0.1))">
        <h3 class="font-display text-lg font-bold mb-5" style="color:#880e4f">📑 Table of Contents</h3>
-       <div class="space-y-2">
-        <button onclick="document.getElementById('en-section-1').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">I. Author Trần Bảo Định</span> </button> <button onclick="document.getElementById('en-section-2').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">II. Biography of Trần Bảo Định</span> </button> <button onclick="document.getElementById('en-section-3').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">III. Cultural Values in His Works</span> </button>
+       <div class="space-y-2"><button onclick="document.getElementById('en-section-1').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">I. Author Trần Bảo Định</span> </button> <button onclick="document.getElementById('en-section-2').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">II. Biography of Trần Bảo Định</span> </button> <button onclick="document.getElementById('en-section-3').scrollIntoView({behavior:'smooth'})" class="block w-full text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white" style="color:#880e4f"> <span class="font-semibold">III. Cultural Values in His Works</span> </button>
        </div>
       </div><!-- SECTION 1: INTRODUCTION -->
       <div id="en-section-1" class="mb-10">
@@ -565,7 +571,8 @@
         <h3 class="font-display text-lg font-bold mb-4 pb-2" style="color:#e91e63">2️⃣ Folk Lyricism &amp; Folk Songs</h3>
         <div class="glass-card rounded-2xl p-6" style="border:1px solid rgba(248,187,208,0.3)">
          <p class="mb-4 text-sm leading-relaxed" style="color:#5d4037">The author makes extensive use of folk lyric elements and folk songs in most short stories, vividly recreating the rich spirit of everyday life and expressing strong appreciation for <strong>traditional family values</strong>.</p>
-         <div class="space-y-4"><!-- Example 1 -->
+         <div class="space-y-4">
+          <!-- Example 1 -->
           <div class="p-4 rounded-lg" style="background:linear-gradient(135deg,#fff1f2,#fce4ec)">
            <p class="font-semibold text-sm mb-2" style="color:#880e4f">🎵 A Hardworking Family</p>
            <p class="italic text-xs px-3 py-2 rounded mb-2" style="background:white; color:#ad1457">"Father casts the net, mother weaves the mesh, the child goes fishing / The son-in-law sets the traps, the daughter-in-law rows the boat"</p>
@@ -597,7 +604,8 @@
         <h3 class="font-display text-lg font-bold mb-4 pb-2" style="color:#e91e63">3️⃣ Folk Knowledge</h3>
         <div class="glass-card rounded-2xl p-6" style="border:1px solid rgba(248,187,208,0.3)">
          <p class="mb-4 text-sm leading-relaxed" style="color:#5d4037">Folk knowledge contains <strong>cultural values, morality, and community way of life</strong>, reflecting how people interact with nature and solve practical problems. Each region develops its own folk knowledge based on natural conditions, history, and customs.</p>
-         <div class="space-y-4"><!-- Agriculture Knowledge -->
+         <div class="space-y-4">
+          <!-- Agriculture Knowledge -->
           <div class="p-4 rounded-lg" style="background:#fff8f9; border-left:4px solid #f8bbd0">
            <p class="font-semibold text-sm mb-2" style="color:#880e4f">🌾 Agricultural Experience</p>
            <p class="text-xs leading-relaxed mb-2" style="color:#5d4037">The author describes how farmers use snakehead fish spawning seasons to time rice planting, showing deep knowledge of natural cycles and their relationship to cultivation.</p>
@@ -613,7 +621,8 @@
        </div><!-- 4. HISTORICAL KNOWLEDGE -->
        <div id="en-section-3" class="mt-10">
         <h3 class="font-display text-lg font-bold mb-4 pb-2" style="color:#e91e63">4️⃣ Historical Knowledge of Southern Vietnam</h3>
-        <div class="space-y-5"><!-- Tiên Châu -->
+        <div class="space-y-5">
+         <!-- Tiên Châu -->
          <div class="glass-card rounded-2xl p-6" style="border:1px solid rgba(248,187,208,0.3)">
           <h4 class="font-semibold text-base mb-3" style="color:#880e4f">🏛️ Tiên Châu Pagoda — National Historical Site</h4>
           <p class="italic px-4 py-3 rounded text-sm mb-3" style="background:linear-gradient(135deg,#fff1f2,#fce4ec); color:#ad1457">"Above the fishing village, after walking just about the distance it takes to finish a cigarette, one would reach a stretch of clear water... Fairies are said to appear here—bathing and playing. Ever since, people have called that place <strong>Tiên Châu—the Islet of Fairies</strong>."</p>
@@ -641,63 +650,62 @@
         </div>
        </div>
       </div><!-- SEPARATOR -->
-      <div class="my-8 flex items-center justify-center gap-3">
-       <span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,#e91e63);" class="inline-block"></span> <span style="color:#e91e63">❀</span> <span style="width:40px;height:1px;background:linear-gradient(90deg,#e91e63,transparent);" class="inline-block"></span>
+      <div class="my-8 flex items-center justify-center gap-3"><span style="width:40px;height:1px;background:linear-gradient(90deg,transparent,#e91e63);" class="inline-block"></span> <span style="color:#e91e63">❀</span> <span style="width:40px;height:1px;background:linear-gradient(90deg,#e91e63,transparent);" class="inline-block"></span>
       </div>
      </div>
     </section><!-- GALLERY PAGE -->
     <section id="page-gallery" class="page-transition page-hidden">
-     <div class="text-center mb-8">
-      <h2 class="font-display text-2xl sm:text-3xl font-bold" style="color:#880e4f">📸 Hình ảnh hoạt động</h2>
-      <p class="mt-2 text-sm" style="color:#8d6e63">Những khoảnh khắc đáng nhớ trong hành trình văn học</p>
-     </div>
-     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-      <div class="rounded-2xl overflow-hidden card-hover aspect-square flex items-center justify-center" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0)">
-       <div class="text-center p-4">
-        <div class="text-4xl mb-2">
-         📝
+     <div class="text-center mb-10">
+      <h2 class="font-display text-2xl sm:text-3xl font-bold" style="color:#880e4f">📸 Thư viện hình ảnh</h2>
+      <p class="mt-2 text-sm" style="color:#8d6e63">Những khoảnh khắc đặc biệt từ tập san của chúng ta</p>
+     </div><!-- SECTION 1: TẬP SAN -->
+     <div class="mb-12">
+      <h3 class="font-display text-xl font-bold mb-6 pb-3" style="color:#880e4f; border-bottom:2px solid #f8bbd0">📚 Tập san</h3>
+      <div class="glass-card rounded-2xl p-6 sm:p-8" style="border:1px solid rgba(248,187,208,0.4); overflow:hidden"><!-- Image Display -->
+       <div class="relative mb-6 rounded-2xl overflow-hidden" style="background:linear-gradient(135deg,#fce4ec,#fff1f2); min-height:300px; display:flex; align-items:center; justify-content:center">
+        <div class="absolute inset-0 flex items-center justify-center" style="background:linear-gradient(135deg,rgba(252,228,236,0.5),rgba(248,187,208,0.3))"><img id="tapsan-image" src="https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Bìa+Tập+san" alt="Tập san" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#fce4ec'; this.alt='Ảnh không có sẵn';" style="width:100%; height:100%; object-fit:cover; border-radius:8px">
+        </div><!-- Navigation Buttons -->
+        <div class="absolute inset-0 flex items-center justify-between p-4 pointer-events-none" style="z-index:10"><button onclick="prevTapsanImage()" class="pointer-events-auto bg-white rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110" style="background:rgba(255,255,255,0.9)"> <i data-lucide="chevron-left" style="width:24px;height:24px;color:#880e4f"></i> </button> <button onclick="nextTapsanImage()" class="pointer-events-auto bg-white rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110" style="background:rgba(255,255,255,0.9)"> <i data-lucide="chevron-right" style="width:24px;height:24px;color:#880e4f"></i> </button>
         </div>
-        <p class="text-xs font-medium" style="color:#880e4f">Buổi thảo luận nhóm</p>
+       </div><!-- Image Info & Counter -->
+       <div class="text-center mb-4">
+        <p class="font-semibold text-sm" id="tapsan-title" style="color:#880e4f">Bìa Tập san</p>
+        <p class="text-xs mt-1" id="tapsan-counter" style="color:#8d6e63">1 / 12</p>
+       </div><!-- Thumbnail Navigation -->
+       <div class="overflow-x-auto pb-2" style="scrollbar-width:thin">
+        <div class="flex gap-3" id="tapsan-thumbnails" style="min-width:min-content"><!-- Thumbnails will be generated by JS -->
+        </div>
        </div>
       </div>
-      <div class="rounded-2xl overflow-hidden card-hover aspect-square flex items-center justify-center" style="background:linear-gradient(135deg,#f3e5f5,#fce4ec)">
-       <div class="text-center p-4">
-        <div class="text-4xl mb-2">
-         🎤
+     </div><!-- SECTION 2: BROCHURE -->
+     <div class="mb-12">
+      <h3 class="font-display text-xl font-bold mb-6 pb-3" style="color:#880e4f; border-bottom:2px solid #f8bbd0">📄 Brochure</h3>
+      <div class="space-y-6"><!-- Brochure 1 -->
+       <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer card-hover" onclick="openBrochureModal(0)" style="border:1px solid rgba(248,187,208,0.4); box-shadow:0 10px 30px rgba(233,30,99,0.1)">
+        <div class="relative overflow-hidden rounded-2xl" style="background:linear-gradient(135deg,#fce4ec,#fff1f2)"><img src="https://via.placeholder.com/800x600/f8bbd0/880e4f?text=Brochure+Tập+san+1" alt="Brochure 1" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#fce4ec'; this.alt='Ảnh không có sẵn';" style="width:100%; height:auto; display:block; transition:transform 0.3s ease">
+         <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100" style="background:rgba(0,0,0,0.5)"><button class="bg-white rounded-full p-3 transition-all duration-300 hover:scale-110" style="background:white; pointer-events:none"> <i data-lucide="zoom-in" style="width:28px;height:28px;color:#880e4f"></i> </button>
+         </div>
         </div>
-        <p class="text-xs font-medium" style="color:#880e4f">Thuyết trình văn học</p>
+        <div class="p-4 text-center">
+         <p class="font-semibold text-sm" style="color:#880e4f">Brochure Tập san (1)</p>
+         <p class="text-xs mt-1" style="color:#8d6e63">Ấn để xem kích thước lớn</p>
+        </div>
+       </div><!-- Brochure 2 -->
+       <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer card-hover" onclick="openBrochureModal(1)" style="border:1px solid rgba(248,187,208,0.4); box-shadow:0 10px 30px rgba(233,30,99,0.1)">
+        <div class="relative overflow-hidden rounded-2xl" style="background:linear-gradient(135deg,#f3e5f5,#fce4ec)"><img src="https://via.placeholder.com/800x600/f8bbd0/880e4f?text=Brochure+Tập+san+2" alt="Brochure 2" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#f3e5f5'; this.alt='Ảnh không có sẵn';" style="width:100%; height:auto; display:block; transition:transform 0.3s ease">
+         <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100" style="background:rgba(0,0,0,0.5)"><button class="bg-white rounded-full p-3 transition-all duration-300 hover:scale-110" style="background:white; pointer-events:none"> <i data-lucide="zoom-in" style="width:28px;height:28px;color:#880e4f"></i> </button>
+         </div>
+        </div>
+        <div class="p-4 text-center">
+         <p class="font-semibold text-sm" style="color:#880e4f">Brochure Tập san (2)</p>
+         <p class="text-xs mt-1" style="color:#8d6e63">Ấn để xem kích thước lớn</p>
+        </div>
        </div>
       </div>
-      <div class="rounded-2xl overflow-hidden card-hover aspect-square flex items-center justify-center" style="background:linear-gradient(135deg,#fff1f2,#f8bbd0)">
-       <div class="text-center p-4">
-        <div class="text-4xl mb-2">
-         🎭
-        </div>
-        <p class="text-xs font-medium" style="color:#880e4f">Biểu diễn sân khấu</p>
-       </div>
-      </div>
-      <div class="rounded-2xl overflow-hidden card-hover aspect-square flex items-center justify-center" style="background:linear-gradient(135deg,#fce4ec,#f3e5f5)">
-       <div class="text-center p-4">
-        <div class="text-4xl mb-2">
-         📖
-        </div>
-        <p class="text-xs font-medium" style="color:#880e4f">Đọc sách cùng nhau</p>
-       </div>
-      </div>
-      <div class="rounded-2xl overflow-hidden card-hover aspect-square flex items-center justify-center" style="background:linear-gradient(135deg,#f8bbd0,#fce4ec)">
-       <div class="text-center p-4">
-        <div class="text-4xl mb-2">
-         🖊️
-        </div>
-        <p class="text-xs font-medium" style="color:#880e4f">Viết bài cảm nhận</p>
-       </div>
-      </div>
-      <div class="rounded-2xl overflow-hidden card-hover aspect-square flex items-center justify-center" style="background:linear-gradient(135deg,#fff1f2,#f3e5f5)">
-       <div class="text-center p-4">
-        <div class="text-4xl mb-2">
-         🌸
-        </div>
-        <p class="text-xs font-medium" style="color:#880e4f">Kỷ niệm lớp 11D2</p>
+     </div><!-- Modal for Brochure Fullscreen -->
+     <div id="brochure-modal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.8); backdrop-filter:blur(4px)">
+      <div class="h-full w-full flex items-center justify-center p-4">
+       <div class="relative max-w-2xl w-full"><img id="brochure-modal-image" src="" alt="Brochure" loading="lazy" style="width:100%; height:auto; border-radius:12px; max-height:80vh; object-fit:contain"> <button onclick="closeBrochureModal()" class="absolute -top-12 right-0 text-white hover:scale-110 transition-all duration-300"> <i data-lucide="x" style="width:32px;height:32px"></i> </button>
        </div>
       </div>
      </div>
@@ -705,7 +713,8 @@
    </main><!-- Footer -->
    <footer class="w-full mt-8 py-6 text-center relative" style="background:linear-gradient(90deg,rgba(252,228,236,0.8),rgba(248,187,208,0.5),rgba(252,228,236,0.8)); border-top:1px solid rgba(248,187,208,0.4); z-index:5">
     <div class="max-w-4xl mx-auto px-4">
-     <div class="flex items-center justify-center gap-2 mb-3"><span style="width:30px;height:1px;background:#f8bbd0" class="inline-block"></span> <span>🌸</span> <span style="width:30px;height:1px;background:#f8bbd0" class="inline-block"></span>
+     <div class="flex items-center justify-center gap-2 mb-3">
+      <span style="width:30px;height:1px;background:#f8bbd0" class="inline-block"></span> <span>🌸</span> <span style="width:30px;height:1px;background:#f8bbd0" class="inline-block"></span>
      </div>
      <p class="text-sm font-semibold" style="color:#880e4f">2025–2026</p>
      <p class="text-xs mt-1" style="color:#ad1457">Sản phẩm được thực hiện bởi <strong>lớp 11D2</strong></p>
@@ -728,6 +737,9 @@
     if (activeBtn) activeBtn.classList.add('active');
     currentPage = pageId;
     document.getElementById('app').scrollTo({ top: 0, behavior: 'smooth' });
+    if (pageId === 'gallery') {
+      setTimeout(() => initGallery(), 100);
+    }
   }
 
   // Scroll to section
@@ -738,6 +750,88 @@
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
     }
+  }
+
+  // Gallery images data
+  const tapsanImages = [
+    { name: 'Bìa Tập san', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Bìa+Tập+san' },
+    { name: 'Phụ lục', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Phụ+lục' },
+    { name: 'Tập san 1', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+1' },
+    { name: 'Tập san 2', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+2' },
+    { name: 'Tập san 3', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+3' },
+    { name: 'Tập san 4', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+4' },
+    { name: 'Tập san 5', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+5' },
+    { name: 'Tập san 6', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+6' },
+    { name: 'Tập san 7', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+7' },
+    { name: 'Tập san 8', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+8' },
+    { name: 'Tập san 9', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+9' },
+    { name: 'Tập san 10', src: 'https://via.placeholder.com/600x400/f8bbd0/880e4f?text=Tập+san+10' }
+  ];
+
+  const brochureImages = [
+    { src: 'https://via.placeholder.com/800x600/f8bbd0/880e4f?text=Brochure+1' },
+    { src: 'https://via.placeholder.com/800x600/f8bbd0/880e4f?text=Brochure+2' }
+  ];
+
+  let currentTapsanIndex = 0;
+
+  function initGallery() {
+    const container = document.getElementById('tapsan-thumbnails');
+    if (!container) return;
+    container.innerHTML = '';
+    tapsanImages.forEach((img, idx) => {
+      const thumb = document.createElement('button');
+      thumb.className = 'flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-all duration-300';
+      thumb.style.border = idx === 0 ? '2px solid #e91e63' : '2px solid transparent';
+      thumb.style.opacity = idx === 0 ? '1' : '0.6';
+      thumb.onclick = () => showTapsanImage(idx);
+      const img_el = document.createElement('img');
+      img_el.src = img.src;
+      img_el.alt = img.name;
+      img_el.loading = 'lazy';
+      img_el.style.width = '100%';
+      img_el.style.height = '100%';
+      img_el.style.objectFit = 'cover';
+      thumb.appendChild(img_el);
+      container.appendChild(thumb);
+    });
+    showTapsanImage(0);
+  }
+
+  function showTapsanImage(idx) {
+    currentTapsanIndex = idx;
+    const img = tapsanImages[idx];
+    document.getElementById('tapsan-image').src = img.src;
+    document.getElementById('tapsan-title').textContent = img.name;
+    document.getElementById('tapsan-counter').textContent = (idx + 1) + ' / ' + tapsanImages.length;
+    
+    // Update thumbnail styles
+    const thumbs = document.getElementById('tapsan-thumbnails').querySelectorAll('button');
+    thumbs.forEach((thumb, i) => {
+      thumb.style.border = i === idx ? '2px solid #e91e63' : '2px solid transparent';
+      thumb.style.opacity = i === idx ? '1' : '0.6';
+    });
+  }
+
+  function nextTapsanImage() {
+    currentTapsanIndex = (currentTapsanIndex + 1) % tapsanImages.length;
+    showTapsanImage(currentTapsanIndex);
+  }
+
+  function prevTapsanImage() {
+    currentTapsanIndex = (currentTapsanIndex - 1 + tapsanImages.length) % tapsanImages.length;
+    showTapsanImage(currentTapsanIndex);
+  }
+
+  function openBrochureModal(idx) {
+    const modal = document.getElementById('brochure-modal');
+    const img = document.getElementById('brochure-modal-image');
+    img.src = brochureImages[idx].src;
+    modal.style.display = 'flex';
+  }
+
+  function closeBrochureModal() {
+    document.getElementById('brochure-modal').style.display = 'none';
   }
 
   // Element SDK
@@ -791,5 +885,5 @@
 
   lucide.createIcons();
 </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e2749d46098c7b2',t:'MTc3NDUzOTk4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e2f38c72739c7ba',t:'MTc3NDYyMzE3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
