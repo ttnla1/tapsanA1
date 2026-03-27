@@ -91,6 +91,10 @@
       background: rgba(255,255,255,0.75); backdrop-filter: blur(10px);
       border: 1px solid rgba(248,187,208,0.3);
     }
+   .brochure-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
   </style>
   <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
@@ -678,32 +682,34 @@
         </div>
        </div>
       </div>
-     </div><!-- SECTION 2: BROCHURE -->
-     <div class="mb-12">
-      <h3 class="font-display text-xl font-bold mb-6 pb-3" style="color:#880e4f; border-bottom:2px solid #f8bbd0">📄 Brochure</h3>
-      <div class="space-y-6"><!-- Brochure 1 -->
-       <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer card-hover" onclick="openBrochureModal(0)" style="border:1px solid rgba(248,187,208,0.4); box-shadow:0 10px 30px rgba(233,30,99,0.1)">
-        <div class="relative overflow-hidden rounded-2xl" style="background:linear-gradient(135deg,#fce4ec,#fff1f2)"><img src="https://via.placeholder.com/800x600/f8bbd0/880e4f?text=Brochure+Tập+san+1" alt="Brochure 1" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#fce4ec'; this.alt='Ảnh không có sẵn';" style="width:100%; height:auto; display:block; transition:transform 0.3s ease">
-         <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100" style="background:rgba(0,0,0,0.5)"><button class="bg-white rounded-full p-3 transition-all duration-300 hover:scale-110" style="background:white; pointer-events:none"> <i data-lucide="zoom-in" style="width:28px;height:28px;color:#880e4f"></i> </button>
-         </div>
-        </div>
-        <div class="p-4 text-center">
-         <p class="font-semibold text-sm" style="color:#880e4f">Brochure Tập san (1)</p>
-         <p class="text-xs mt-1" style="color:#8d6e63">Ấn để xem kích thước lớn</p>
-        </div>
-       </div><!-- Brochure 2 -->
-       <div class="glass-card rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer card-hover" onclick="openBrochureModal(1)" style="border:1px solid rgba(248,187,208,0.4); box-shadow:0 10px 30px rgba(233,30,99,0.1)">
-        <div class="relative overflow-hidden rounded-2xl" style="background:linear-gradient(135deg,#f3e5f5,#fce4ec)"><img src="https://via.placeholder.com/800x600/f8bbd0/880e4f?text=Brochure+Tập+san+2" alt="Brochure 2" loading="lazy" onerror="console.error('Image failed:', this.src); this.style.background='#f3e5f5'; this.alt='Ảnh không có sẵn';" style="width:100%; height:auto; display:block; transition:transform 0.3s ease">
-         <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100" style="background:rgba(0,0,0,0.5)"><button class="bg-white rounded-full p-3 transition-all duration-300 hover:scale-110" style="background:white; pointer-events:none"> <i data-lucide="zoom-in" style="width:28px;height:28px;color:#880e4f"></i> </button>
-         </div>
-        </div>
-        <div class="p-4 text-center">
-         <p class="font-semibold text-sm" style="color:#880e4f">Brochure Tập san (2)</p>
-         <p class="text-xs mt-1" style="color:#8d6e63">Ấn để xem kích thước lớn</p>
-        </div>
-       </div>
-      </div>
-     </div><!-- Modal for Brochure Fullscreen -->
+     </div>
+     <!-- SECTION: BROCHURE -->
+<div class="mb-12">
+  <h3 class="font-display text-xl font-bold mb-6 pb-3" 
+      style="color:#880e4f; border-bottom:2px solid #f8bbd0">
+    📖 Brochure
+  </h3>
+
+  <div class="glass-card rounded-2xl p-6 sm:p-8"
+       style="border:1px solid rgba(248,187,208,0.4)">
+
+    <div class="flex flex-col gap-6">
+      
+      <!-- Ảnh 1 -->
+      <img src="brochuretapsan1.jpg"
+           class="brochure-img w-full rounded-xl transition-all duration-300 cursor-pointer"
+           onclick="openBrochure(0)">
+
+      <!-- Ảnh 2 -->
+      <img src="brochuretapsan2.jpg"
+           class="brochure-img w-full rounded-xl transition-all duration-300 cursor-pointer"
+           onclick="openBrochure(1)">
+           
+    </div>
+
+  </div>
+</div>
+     <!-- Modal for Brochure Fullscreen -->
      <div id="brochure-modal" class="fixed inset-0 z-50 hidden" style="background:rgba(0,0,0,0.8); backdrop-filter:blur(4px)">
       <div class="h-full w-full flex items-center justify-center p-4">
        <div class="relative max-w-2xl w-full"><img id="brochure-modal-image" src="" alt="Brochure" loading="lazy" style="width:100%; height:auto; border-radius:12px; max-height:80vh; object-fit:contain"> <button onclick="closeBrochureModal()" class="absolute -top-12 right-0 text-white hover:scale-110 transition-all duration-300"> <i data-lucide="x" style="width:32px;height:32px"></i> </button>
@@ -885,5 +891,37 @@
 
   lucide.createIcons();
 </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e2f38c72739c7ba',t:'MTc3NDYyMzE3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e2f38c72739c7ba',t:'MTc3NDYyMzE3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+ <script id="brochure-js">
+const brochureImages = [
+  { src: 'brochuretapsan1.jpg' },
+  { src: 'brochuretapsan2.jpg' }
+];
+
+function openBrochure(index) {
+  const imgSrc = brochureImages[index].src;
+
+  const modal = document.createElement("div");
+  modal.style.position = "fixed";
+  modal.style.inset = "0";
+  modal.style.background = "rgba(0,0,0,0.7)";
+  modal.style.display = "flex";
+  modal.style.alignItems = "center";
+  modal.style.justifyContent = "center";
+  modal.style.zIndex = "9999";
+
+  const img = document.createElement("img");
+  img.src = imgSrc;
+  img.style.maxWidth = "90%";
+  img.style.maxHeight = "90%";
+  img.style.borderRadius = "12px";
+
+  modal.appendChild(img);
+
+  modal.onclick = () => document.body.removeChild(modal);
+
+  document.body.appendChild(modal);
+}
+</script>
+ </body>
 </html>
